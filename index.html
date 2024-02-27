@@ -1,56 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek1 STr HTML 27 02 2024</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <title>Tugas Proyek 1</title>
+  </head>
+  <body>
+    <!-- Header -->
     <header>
+      <div class="main-container">
+        <div class="nav">
+          <div class="logo">
+            <a href="/">NINDA</a>
+          </div>
 
-        <nav>
-            <div class="logo">
-                <h4>Rizqi Proyek 1</h4>
-            </div>
+          <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Assignment</a></li>
-                <li><a href="#">About</a></li>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#portfolios">TMI</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="/cv.pdf" target="_blank">
+                  <button class="btn">CV</button>
+                </a>
+              </li>
             </ul>
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>   
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-    <main>
-        <div class="box flextwo">
-            <article>
-                <h2>Tentang Web</h2>
-                <p>Web Ini dibuat untuk memenuhi tugas Proyek 1. Beberapa sumber yang dipakai dalam pengerjaan tugas ini selain dari lms  adalah dari ... Terima Kasih</p>
-            </article>
-        </div>
-        <aside class="box flexone">
-            <img src="img/RIZQI.png" class="image"/>
-            <h5>Muhammad Rizqi Sholahuddin</h5>
-        </aside>
-    </main>
-    <footer class="box">
-        Rizqi, Di depan Laptop 27 Februari 2024
-    </footer>
-    </div>
-</div>
-    <script src="js/main.js"></script>
-</body>
+          </nav>
 
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </div>
+
+        <section id="hero">
+          <div class="hero-left">
+            <h3 class="pre-title">My name is</h3>
+            <h1 class="hero-name"><em> Nadia<span> Rachma</span> Yuninda</em></h1>
+            <p>
+              Saya adalah mahasiswa semester 2 D4 teknik informatika di Politeknik Negeri Bandung.
+              saya memiliki ketertarikan yang kuat di dalam bidang IT. Saat ini, saya masih terus menekuni dan menggali ilmu ilmu yang 
+              berkaitan dengan dunia IT.
+            </p>
+          </div>
+
+          <div class="hero-right">
+            <img src="./images/gambar1.jpg" alt="Potret diri Nadia" />
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- End Header -->
+
+
+
+    <!-- Portfolios -->
+    <section id="portfolios">
+      <div class="portfolios main-container">
+        <h1 class="section-title">TOO MUCH INFORMATION</h1>
+
+        <div class="grid-3">
+          <!-- Portfolio 1 -->
+          <div class="portfolio">
+            <div class="portfolio-cover">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Nd3-upw3WuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title">
+                <h4>Motto Hidup</h4>
+               
+              </div>
+              <div class="portfolio-tags">
+                <div>Motto</div>
+                <div>Hidup</div>
+              </div>
+              <p>
+                motto hidup saya sederhana sekali yaitu "live a life man!". Saya memiliki banyak hobi yang salah satunya
+                adalah fangirling.
+                untuk mengenal lebih jauh mengenai saya, kamu bisa mengklik icon diatas.
+              </p>
+            </div>
+          </div>
+    </section>
+    <!-- End Portfolios -->
+
+    <!-- Skills & Education -->
+    <section id="skills">
+      <div class="skills main-container">
+        <h3 class="pre-title">Learning Path</h3>
+        <h1 class="section-title">Skills & Education</h1>
+
+        <div class="skills-grid">
+          <div class="skills-left">
+            <div class="education">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info">
+                <h4 class="education-title">MAS Husnul Khotimah</h4>
+                <h4 class="education-years">2020 - 2023</h4>
+              </div>
+            </div>
+            <div class="education">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info">
+                <h4 class="education-title">Mts Husnul Khotimah</h4>
+                <h4 class="education-years">2017 - 2020</h4>
+              </div>
+            </div>
+            <div class="education">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info">
+                <h4 class="education-title">SDIT Insan Kamil</h4>
+                <h4 class="education-years">2011-2017</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-right">
+            <p>
+              Kemampuan yang saya miliki belum banyak, tapi seiring berjalannya perkuliahan saya, saya yakin
+              kemampuan saya akan terus meningkat. Harapan saya, setelah menamatkan pendidikan sarjana saya, saya dapat 
+              meng implementasi kan ilmu ilmu yang saya dapat dengan sebaik baiknya dan sebanyak banyaknya.
+            </p>
+
+            <div class="skills-list">
+                <ul>
+                  <li>lesson learn perkuliah Proyek 1:</li>
+                  <li>Masih banyak hal yang belum saya bisa pahami</li>
+                  <li>Pentingnya manajemen waktu saat mengerjakan tugas</li>
+                  <li>Kecepatan dan ketepatan harus selalu dilatih</li>
+                 
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills & Education  -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact main-container">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Gt4HhDOHGEOTsp_lWnCzBF23fVU&hl=en_US" width="640" height="480"></iframe>
+
+        <div class="contact-right">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 1c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 14h-24l4-8h3.135c.385.641.798 1.309 1.232 2h-3.131l-2 4h17.527l-2-4h-3.131c.435-.691.848-1.359 1.232-2h3.136l4 8z"
+                />
+              </svg>
+            </div>
+            <div class="contact-item-detail">
+              <h4>Address</h4>
+              <p>Jl. Gegerkalong Hilir, Desa Ciwaruga, Kecamatan Parongpong</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                />
+              </svg>
+            </div>
+            <div class="contact-item-detail">
+              <h4>Phone</h4>
+              <p>+62 856 0380 4164</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+              </svg>
+            </div>
+            <div class="contact-item-detail">
+              <h4>Email</h4>
+              <p>nadia.rachma.tif423@polban.ac.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Fomter -->
+    <footer>
+      <div class="footer-icons">       
+      </div>
+      <p>&#169; 2024 - Made by OSWYONGIE</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
