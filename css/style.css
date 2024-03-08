@@ -189,7 +189,7 @@ tr:hover {
     padding: 6px;
   }
 }
-photo-container {
+ -container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -300,6 +300,12 @@ photo-container {
     
     order: 2; 
   }
+  .skills-right img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
 }
 
 
@@ -506,6 +512,10 @@ p {
   /* Adjustments for TMI section */
   .grid-container {
     grid-template-columns: 1fr;
+  }
+  .skills-right{
+    align-items: center;
+    align-content: center;
   }
 
   /* Adjustments for contact section */
