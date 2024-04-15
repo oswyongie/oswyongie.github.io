@@ -1,0 +1,54 @@
+<!--File:headline_json.html-->
+<html>
+<head>
+    <title>Data Scraping 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Import Library JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Kode Java Script -->
+    
+</head>
+<body>
+    <!-- Menampilkan Judul-->
+    <h1> Headline Republika Online </h1>
+
+   <!-- Menampilkan Headline --> 
+   <div id="headline_json"> 
+    <table id="Hasil_Scraping"> 
+        <thead> 
+            <tr> <td>No</td> 
+            <td>Judul</td> 
+            <td>Kategori</td> 
+            <td>Waktu Publikasi</td> 
+            <td>Waktu Pengambilan</td> 
+            </tr> 
+        </thead> 
+    <tbody>
+
+    </tbody> 
+    </table> 
+    </div> 
+    <script type="text/javascript"> 
+    $(function() { // Mengambil data dari file headline.txt dengan fungsi $.get() Jquery 
+        $.get('./scrapedata/headline.json', function(obj) { 
+        // Persiapan variabel untuk menyimpan baris-baris tabel var 
+        rows = ''; 
+        // Looping data headline dengan fungsi $.each() Jquery 
+        $.each(obj, function(n, data) { // Membuat baris tabel untuk setiap headline 
+            rows += '<tr>'; 
+            rows += '<td>' + (n + 1) + '</td>'; 
+            rows += '<td>' + data.judul + '</td>'; 
+            rows += '<td>' + data.kategori + '</td>'; 
+            rows += '<td>' + data.waktu_publikasi + '</td>'; 
+            rows += '<td>' + data.waktu_scrape + '</td>'; 
+            rows += '</tr>'
+            ; }); 
+        // Menambahkan baris-baris tabel ke dalam tbody 
+        $('#Hasil_Scraping tbody').html(rows); 
+        });
+     });
+    </script>
+</body>
+</html>
